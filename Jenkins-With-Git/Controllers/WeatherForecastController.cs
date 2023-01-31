@@ -27,7 +27,6 @@ namespace Jenkins_With_Git.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-            //Adding some changes because i need to test build and Test
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
